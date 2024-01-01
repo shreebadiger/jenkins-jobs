@@ -7,4 +7,12 @@
       - { name: "expense-project"}
       - { name: "expense-project/CI-jobs"}
       - { name: "expense-project/Infra-jobs"}
-     jobs: ""
+     mb_jobs:
+      - { name: "expense-frontend", folder: "expense-project/CI-jobs"}
+      - { name: "expense-backend", folder: "expense-project/CI-jobs"}
+
+
+     sb_jobs:
+      - { name: "expense-ansible", folder: "expense-project/Infra-jobs"}
+      - { name: "expense-terraform" , folder: "expense-project/Infra-jobs"}
+       
