@@ -5,4 +5,4 @@
   vars:
      folder:
       - { name: "expense-project"}
-      
+     jobs: ""
