@@ -14,4 +14,4 @@
     password: admin123
     url: http://172.31.40.166:8080
     user: admin
-  loop: "{{mb_jobs}}"
+  loop: "{{ mb_jobs }}"
