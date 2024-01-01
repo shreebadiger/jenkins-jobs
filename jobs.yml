@@ -12,10 +12,12 @@
       - { name: "expense-backend", folder: "expense-project/CI-jobs", repo: "https://github.com/shreebadiger/expense-backend.git"}
       - { name: "expense-frontend", folder: "expense-project/CI-jobs", repo: "https://github.com/shreebadiger/expense-frontend.git"}
      sb_jobs:
-      - { name: "expense-ansible", folder: "expense-project/Infra-jobs", repo: "https://github.com/shreebadiger/ansi.git"}
-      - { name: "expense-terraform" , folder: "expense-project/Infra-jobs",repo: "https://github.com/shreebadiger/expense-terraform.git"}
-      - { name: "golden-ami" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/golden-ami.git"}
-      - { name: "aws-parameter-store" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/aws-parameter-store.git"} 
+      - { name: "expense-ansible", folder: "expense-project/Infra-jobs", repo: "https://github.com/shreebadiger/ansi.git",filename: "Jenkinsfile"}
+      - { name: "expense-terraform" , folder: "expense-project/Infra-jobs",repo: "https://github.com/shreebadiger/expense-terraform.git",filename: "Jenkinsfile"}
+      - { name: "golden-ami" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/golden-ami.git",filename: "Jenkinsfile"}
+      - { name: "aws-parameter-store" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/aws-parameter-store.git",filename: "Jenkinsfile"} 
+      - { name: "jenkins-ip-update" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/miscellaneous-tasks.git",filename: "jenkins-ip-update/Jenkinsfile"} 
+
      fs_jobs:
       - { name: "prometheus-reload", folder: "miscellaneous", filename: "prometheus-reload.xml"}
     
