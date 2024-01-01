@@ -9,7 +9,7 @@
 
 - name: Create a folder
   community.general.jenkins_job:
-    config: "{{ lookup('file', 'templates/mjob.xml') }}"
+    config: "{{ lookup('template', 'templates/mjob.xml') }}"
     name: "{{item.folder}}/{{item.name}}"
     password: admin123
     url: http://172.31.40.166:8080
@@ -18,7 +18,7 @@
 
 - name: Create a folder
   community.general.jenkins_job:
-    config: "{{ lookup('file', 'templates/sjob.xml') }}"
+    config: "{{ lookup('template', 'templates/sjob.xml') }}"
     name: "{{item.folder}}/{{item.name}}"
     password: admin123
     url: http://172.31.40.166:8080
