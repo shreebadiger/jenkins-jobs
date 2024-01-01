@@ -3,4 +3,6 @@
   roles:
     - jobs
   vars:
-     jobs: ""
+     folder:
+      - { name: "expense-project"}
+      
