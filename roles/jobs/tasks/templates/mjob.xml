@@ -1,8 +1,8 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject plugin="workflow-multibranch@756.v891d88f2cd46">
   <actions/>
-  <description></description>
-  <displayName>{{item.name}}</displayName>
+  <description>{{item.name}}</description>
+  <displayName></displayName>
   <properties/>
   <folderViews class="jenkins.branch.MultiBranchProjectViewHolder" plugin="branch-api@2.1135.v8de8e7899051">
     <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
@@ -33,7 +33,7 @@
           <credentialsId>github</credentialsId>
           <repoOwner>shreebadiger</repoOwner>
           <repository>{{item.name}}</repository>
-          <repositoryUrl>https://github.com/shreebadiger/expense-backend.git</repositoryUrl>
+          <repositoryUrl>{{item.repo}}</repositoryUrl>
           <traits>
             <org.jenkinsci.plugins.github__branch__source.BranchDiscoveryTrait>
               <strategyId>3</strategyId>
