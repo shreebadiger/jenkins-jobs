@@ -7,7 +7,7 @@
     user: admin
   loop: "{{folders}}"
 
-- name: Create a folder
+- name: Create  Multibranch pipeline 
   community.general.jenkins_job:
     config: "{{ lookup('template', 'templates/mjob.xml') }}"
     name: "{{item.folder}}/{{item.name}}"
@@ -16,7 +16,7 @@
     user: admin
   loop: "{{ mb_jobs }}"
 
-- name: Create a folder
+- name: Create  singlebranch pipeline 
   community.general.jenkins_job:
     config: "{{ lookup('template', 'templates/sjob.xml') }}"
     name: "{{item.folder}}/{{item.name}}"
@@ -24,5 +24,26 @@
     url: http://172.31.40.166:8080
     user: admin
   loop: "{{ sb_jobs }}"
+
+- name: Create  freestyle jobs 
+  community.general.jenkins_job:
+    config: "{{ lookup('template', 'templates/{{item.filename}}') }}"
+    name: "{{item.folder}}/{{item.name}}"
+    password: admin123
+    url: http://172.31.40.166:8080
+    user: admin
+  loop: "{{ fs_jobs }}"
+
+
+
+
+
+
+
+
+
+
+
+
 
   

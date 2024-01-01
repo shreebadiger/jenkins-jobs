@@ -7,12 +7,12 @@
       - { name: "expense-project"}
       - { name: "expense-project/CI-jobs"}
       - { name: "expense-project/Infra-jobs"}
+      - { name: "miscellaneous"}
      mb_jobs:
       - { name: "expense-backend", folder: "expense-project/CI-jobs", repo: "https://github.com/shreebadiger/expense-backend.git"}
       - { name: "expense-frontend", folder: "expense-project/CI-jobs", repo: "https://github.com/shreebadiger/expense-frontend.git"}
-
-
      sb_jobs:
       - { name: "expense-ansible", folder: "expense-project/Infra-jobs", repo: "https://github.com/shreebadiger/ansi.git"}
       - { name: "expense-terraform" , folder: "expense-project/Infra-jobs",repo: "https://github.com/shreebadiger/expense-terraform.git"}
-       
+     fs_jobs:
+      - { name: "prometheus-reload", folder: "miscellaneous", filename: "prometheus-reload.xml"}
