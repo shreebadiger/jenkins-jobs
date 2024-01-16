@@ -8,6 +8,9 @@
       - { name: "expense-project/CI-jobs"}
       - { name: "expense-project/Infra-jobs"}
       - { name: "miscellaneous"}
+      - { name: "roboshop-project"}
+      - { name: "roboshop-project/CI-jobs"}
+      - { name: "roboshop-project/Infra-jobs"}
      mb_jobs:
       - { name: "expense-backend", folder: "expense-project/CI-jobs", repo: "https://github.com/shreebadiger/expense-backend.git"}
       - { name: "expense-frontend", folder: "expense-project/CI-jobs", repo: "https://github.com/shreebadiger/expense-frontend.git"}
@@ -17,6 +20,7 @@
       - { name: "golden-ami" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/golden-ami.git",filename: "Jenkinsfile"}
       - { name: "aws-parameter-store" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/aws-parameter-store.git",filename: "Jenkinsfile"} 
       - { name: "jenkins-ip-update" , folder: "miscellaneous",repo: "https://github.com/shreebadiger/miscellaneous-tasks.git",filename: "jenkins-ip-update/Jenkinsfile"} 
+      - { name: "roboshop-terraform" , folder: "roboshop-project/Infra-jobs",repo: "https://github.com/shreebadiger/roboshop-terraform.git",filename: "Jenkinsfile"}
 
      fs_jobs:
       - { name: "prometheus-reload", folder: "miscellaneous", filename: "prometheus-reload.xml"}
